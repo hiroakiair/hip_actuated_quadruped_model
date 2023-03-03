@@ -57,8 +57,8 @@ function animation(t,y,l,g)
     Foot_f = plot(x_F(1,:),y_F(1,:));
     Foot_h = plot(x_H(1,:),y_H(1,:));
     ground = yline(0);
-%     xlim([-0.3 0.3])
-%     ylim([-0.3 0.3])
+    xlim([-0.5 8.0])
+    ylim([-0.1 0.7])
 %     zlim([-0.2 0.8])
     
     t_pre = 0;

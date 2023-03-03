@@ -11,14 +11,14 @@ function plot_sols(t,y)
     ylabel('y_1 (m)');
     
     figure();
-    plot(t,y(:,3)*360/(3*pi));
+    plot(t,y(:,3)*360/(2*pi));
     xlabel('Time (s)');
     ylabel(' \theta_p (deg) ');
     
     figure();
-    plot(t,y(:,4)*360/(3*pi));
+    plot(t,y(:,4)*360/(2*pi)-y(:,3)*360/(2*pi));
     xlabel('Time (s)');
-    ylabel(' \theta_s (deg) ');
+    ylabel(' \theta_s - \theta_p (deg) ');
     
     figure();
     plot(t,y(:,5));
@@ -31,12 +31,12 @@ function plot_sols(t,y)
     ylabel('dy_1 (m)');
     
     figure();
-    plot(t,y(:,7)*360/(3*pi));
+    plot(t,y(:,7)*360/(2*pi));
     xlabel('Time (s)');
     ylabel(' d\theta_p (deg) ');
     
     figure();
-    plot(t,y(:,8)*360/(3*pi));
+    plot(t,y(:,8)*360/(2*pi)-y(:,7)*360/(2*pi));
     xlabel('Time (s)');
     ylabel(' d\theta_s (deg) ');
     
