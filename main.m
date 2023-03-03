@@ -28,17 +28,19 @@ J_1 = M*l_b^2/3;
 m = 1.0;
 l_ab = 0.2;
 J_2 = m*l_ab^2;
-k_ab = 80.0;
-% k_ab = 1000.0;
+% k_ab = 80.0;
+k_ab = 1000.0;
 b_ab = 10.0;
 
 g = 9.81;
 
 %‹r‚Ìİ’è
 k_F = 1800;
-b_F = 0;
+b_F = 200;
+% b_F = 0;
 k_H = 2500;
-b_H = 0;
+b_H = 200;
+% b_H = 0;
 
 L_0F = 0.28;
 L_0H = 0.3;
@@ -48,7 +50,7 @@ xH_toe = 0;
 
 tau_nF = 10;
 tau_nH = 12;
-gamma_F_td = pi/8;
+gamma_F_td = pi/6;
 gamma_H_td = pi/8;
 %comment
 
@@ -70,7 +72,7 @@ tfinal = 10;
 
         
 % ƒ‚ƒfƒ‹‚Ì‘I‘ğ
-q0 = [0; L_0F+0.1; pi/8; pi/2+pi/8];
+q0 = [0; L_0F+0.1; pi/10; pi/2+pi/10];
 dq0 = [0.7; 0; 0; 0];
 q_initial = [q0; dq0];
 

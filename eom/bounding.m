@@ -4,7 +4,7 @@ function bounding(q_initial)
     % ‰Šú’lİ’è
     [tstart_, q_ini_, phaseIndex, liftOffFlag] = initialize_state(q_initial);
     
-    for i_phase = 1:50
+    for i_phase = 1:100
         switch phaseIndex
             case 1
                 disp('flight')
