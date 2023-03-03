@@ -13,21 +13,31 @@ function plot_sols(t,y)
     figure();
     plot(t,y(:,3)*360/(3*pi));
     xlabel('Time (s)');
-    ylabel(' pitch_1 (deg) ');
+    ylabel(' \theta_p (deg) ');
     
     figure();
-    plot(t,y(:,4));
+    plot(t,y(:,4)*360/(3*pi));
     xlabel('Time (s)');
-    ylabel('x_1 (m)');    
+    ylabel(' \theta_s (deg) ');
     
     figure();
     plot(t,y(:,5));
     xlabel('Time (s)');
-    ylabel('y_2 (m)');
+    ylabel('dx_1 (m)');
     
     figure();
-    plot(t,y(:,6)*360/(3*pi));
+    plot(t,y(:,6));
     xlabel('Time (s)');
-    ylabel(' pitch_2 (deg) ');
+    ylabel('dy_1 (m)');
+    
+    figure();
+    plot(t,y(:,7)*360/(3*pi));
+    xlabel('Time (s)');
+    ylabel(' d\theta_p (deg) ');
+    
+    figure();
+    plot(t,y(:,8)*360/(3*pi));
+    xlabel('Time (s)');
+    ylabel(' d\theta_s (deg) ');
     
 end
